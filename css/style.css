@@ -1,0 +1,80 @@
+/*1.Estilos gerais para a página*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*2.Espaço utilizado para criar nosso card*/
+
+body {
+  font-family: "Georgia", serif; /*Uma fonte um pouco mais elegante para receitas*/
+  background-color: #f5f5f5; /*Cor de fundo clara e neutra*/
+  color: #333; /*Cor do texto escura para boa legibilidade*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /*Altura mínima para ocupar a tela inteira*/
+  margin: 0;
+}
+
+/*3.Estilos do card*/
+
+.recipe-card {
+  width: 350px; /*Largura fixa para o card*/
+  background-color: #fff; /*Fundo branco para destacar o conteúdo*/
+  border-radius: 15px; /*Cantos arredondados para um visual mais suave*/
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /*Sombra suave para dar profundidade*/
+  overflow: hidden; /*Para garantir que o conteúdo não ultrapasse os cantos arredondados, essa propriedade corta qualquer conteúdo filho (no caso, nossa imagem) que tente vazar para fora*/
+}
+
+/*4.Estilos da imagem*/
+
+.recipe-image {
+  width: 100%; /*A imagem ocupa toda a largura do card*/
+  display: block; /*Remove o espaço embaixo da imagem*/
+}
+
+/*5.Estilos do conteúdo da receita (título, ingredientes, instruções)*/
+
+.recipe-content {
+  padding: 20px; /*Espaçamento interno para o conteúdo*/
+}
+
+/* 6.Estilizar os títulos das receitas */
+
+.recipe-title {
+  font-size: 1.5em; /*1rem = 16px, tamanho maior para o título*/
+  margin-top: 0; /*Remove o espaçamento acima do título*/
+  margin-bottom: 10px; /*Espaçamento abaixo do título*/
+  color: #000; /*Cor laranja para o título, remetendo a comida*/
+}
+
+/* 7.Estilizar a descrição da receita */
+.recipe-description {
+  font-size: 1rem; /*Tamanho padrão para o texto*/
+  margin-bottom: 20px; /*Espaçamento abaixo da descrição*/
+  color: #555; /*Cor cinza escuro para o texto, boa legibilidade*/
+  line-height: 1.6; /*Espaçamento entre linhas para melhor leitura*/
+}
